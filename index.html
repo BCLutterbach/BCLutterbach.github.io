@@ -4,129 +4,165 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Badminton Club Lutterbach</title>
-    <!-- MDBootstrap CSS -->
+    <!-- MDBootstrap -->
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css"
       rel="stylesheet"
     />
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/a2e0b1c6bb.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .hero {
+        background: url("images/hero.jpg") center/cover no-repeat;
+        color: white;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .hero h1 {
+        background: rgba(0, 0, 0, 0.6);
+        padding: 10px 20px;
+        border-radius: 5px;
+      }
+    </style>
   </head>
   <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-      <div class="container">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container-fluid">
         <a class="navbar-brand" href="#">BCL</a>
         <button
           class="navbar-toggler"
           type="button"
           data-mdb-toggle="collapse"
           data-mdb-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
         >
           <i class="fas fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Accueil</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#club">Le Club</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#horaires">Horaires</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#evenements">Événements</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="#accueil">Accueil</a></li>
+            <li class="nav-item"><a class="nav-link" href="#galerie">Galerie</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <!-- Hero section -->
-    <header class="bg-primary text-white text-center p-5 mt-5">
-      <div class="container">
-        <h1>Badminton Club Lutterbach</h1>
-        <p class="lead">Sport, passion, convivialité</p>
-        <a href="#horaires" class="btn btn-light m-2">Voir les horaires</a>
-        <a href="#contact" class="btn btn-outline-light m-2">Nous contacter</a>
-      </div>
-    </header>
-
-    <!-- Club section -->
-    <section id="club" class="p-4">
-      <div class="container">
-        <h2>Le Club</h2>
-        <p>
-          Bienvenue au Badminton Club Lutterbach, ouvert à tous les niveaux et à
-          tous les âges. Venez partager votre passion du badminton dans une
-          ambiance conviviale !
-        </p>
-      </div>
+    <!-- Hero -->
+    <section id="accueil" class="hero">
+      <h1>Badminton Club Lutterbach</h1>
     </section>
 
-    <!-- Horaires section -->
-    <section id="horaires" class="p-4 bg-light">
+    <!-- Galerie / Carrousel -->
+    <section id="galerie" class="py-5">
       <div class="container">
-        <h2>Horaires & Tarifs</h2>
-        <p>Consultez nos horaires et nos tarifs adaptés à tous.</p>
-        <!-- Plus tard: tableau dynamique -->
-      </div>
-    </section>
-
-    <!-- Evenements section -->
-    <section id="evenements" class="p-4">
-      <div class="container">
-        <h2>Prochains événements</h2>
-        <ul>
-          <li>Tournoi interne - Date à venir</li>
-          <li>Portes ouvertes - Date à venir</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- Contact section -->
-    <section id="contact" class="p-4 bg-light">
-      <div class="container">
-        <h2>Contact</h2>
-        <form>
-          <div class="mb-3">
-            <label class="form-label">Nom</label>
-            <input type="text" class="form-control" />
+        <h2 class="mb-4 text-center">Galerie photos</h2>
+        <div
+          id="carouselBCL"
+          class="carousel slide carousel-fade"
+          data-mdb-ride="carousel"
+        >
+          <div class="carousel-inner" id="carouselContent">
+            <!-- images générées par JS -->
           </div>
-          <div class="mb-3">
-            <label class="form-label">Email</label>
-            <input type="email" class="form-control" />
-          </div>
-          <div class="mb-3">
-            <label class="form-label">Message</label>
-            <textarea class="form-control"></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Envoyer</button>
-        </form>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-dark text-white text-center p-3">
-      <div class="container">
-        <p>© 2025 Badminton Club Lutterbach</p>
-        <div>
-          <a href="#" class="text-white m-2">Facebook</a>
-          <a href="#" class="text-white m-2">Instagram</a>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-mdb-target="#carouselBCL"
+            data-mdb-slide="prev"
+          >
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-mdb-target="#carouselBCL"
+            data-mdb-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span>
+          </button>
         </div>
       </div>
-    </footer>
+    </section>
 
-    <!-- MDBootstrap JS -->
+    <!-- Contact -->
+    <section id="contact" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="mb-4 text-center">Contactez-nous</h2>
+        <form
+          action="https://formspree.io/f/mvgrlyld"
+          method="POST"
+        >
+          <div class="mb-3">
+            <label for="email" class="form-label">Votre email</label>
+            <input
+              type="email"
+              class="form-control"
+              name="email"
+              id="email"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Votre message</label>
+            <textarea
+              class="form-control"
+              name="message"
+              id="message"
+              rows="4"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary w-100" >Envoyer</button>
+        </form>
+
+        <!-- Coordonnées -->
+        <div class="mt-5 text-center">
+          <p>📍 Gymnase XYZ, 5 rue des Sports, 68460 Lutterbach</p>
+          <p>📞 06 12 34 56 78</p>
+          <p>📧 contact@bclutterbach.fr</p>
+          <!-- Réseaux sociaux -->
+          <div class="mt-3">
+            <a href="#" class="btn btn-outline-dark btn-floating m-1" role="button"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" class="btn btn-outline-dark btn-floating m-1" role="button"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MDBootstrap -->
     <script
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"
     ></script>
+
+    <!-- JS intégré -->
+    <script>
+      const images = [
+        "images/carrousel/slide1.jpg",
+        "images/carrousel/slide2.jpg",
+        "images/carrousel/slide3.jpg",
+        "images/carrousel/slide4.jpg"
+      ];
+
+      const carouselContent = document.getElementById("carouselContent");
+
+      images.forEach(function(src, index) {
+        var div = document.createElement("div");
+        div.classList.add("carousel-item");
+        if (index === 0) div.classList.add("active");
+        div.innerHTML = '<img src="' + src + '" class="d-block w-100" alt="Slide ' + (index + 1) + '">';
+        carouselContent.appendChild(div);
+      });
+    </script>
   </body>
 </html>
