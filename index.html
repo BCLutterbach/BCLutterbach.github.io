@@ -32,9 +32,7 @@
         max-height: 400px;
         object-fit: cover;
     }
-    .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-}
+    
     </style>
   </head>
   <body>
@@ -43,13 +41,17 @@
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">BCL</a>
         <button
-          class="navbar-toggler"
-          type="button"
-          data-mdb-toggle="collapse"
-          data-mdb-target="#navbarNav"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+  class="navbar-toggler text-white"
+  type="button"
+  data-mdb-toggle="collapse"
+  data-mdb-target="#navbarNav"
+  aria-controls="navbarNav"
+  aria-expanded="false"
+  aria-label="Toggle navigation"
+>
+  <i class="fas fa-bars fa-lg"></i>
+</button>
+
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item"><a class="nav-link active" href="index.html">Accueil</a></li>
