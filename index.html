@@ -41,15 +41,16 @@
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">BCL</a>
         <button
-  class="navbar-toggler text-white"
+  class="navbar-toggler"
   type="button"
   data-mdb-toggle="collapse"
   data-mdb-target="#navbarNav"
   aria-controls="navbarNav"
   aria-expanded="false"
   aria-label="Toggle navigation"
+  style="border: none; background: none; font-size: 1.8rem; color: white;"
 >
-  <i class="fas fa-bars fa-lg"></i>
+  ☰
 </button>
 
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -104,32 +105,25 @@
 
     <!-- Contact -->
     <section id="contact" class="py-5 bg-light">
-      <div class="container">
+        <div class="container">
         <h2 class="mb-4 text-center">Contactez-nous</h2>
         <form
-          action="https://formspree.io/f/mvgrlyld"
-          method="POST"
-        >
-          <div class="mb-3">
-            <label for="email" class="form-label">Votre email</label>
-            <input
-              type="email"
-              class="form-control"
-              name="email"
-              id="email"
-              required
-            />
-          </div>
-          <div class="mb-3">
-            <label for="message" class="form-label">Votre message</label>
-            <textarea
-              class="form-control"
-              name="message"
-              id="message"
-              rows="4"
-              required
-            ></textarea>
-          </div>
+            action="https://formspree.io/f/mvgrlyld"
+            method="POST">
+            <div class="mb-3">
+                <label for="email" class="form-label">Votre email</label>
+                <input
+                type="email"
+                class="form-control"
+                name="email"
+                id="email"
+                required
+                />
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Votre message</label>
+                <textarea class="form-control" name="message" id="message" rows="4" required></textarea>
+            </div>
           <button type="submit" class="btn btn-primary w-100" >Envoyer</button>
         </form>
 
