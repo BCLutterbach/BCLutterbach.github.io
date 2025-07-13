@@ -1,188 +1,166 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Badminton Club Lutterbach</title>
-    <!-- MDBootstrap -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css"
-      rel="stylesheet"
-    />
-    <!-- Font Awesome -->
-    <script
-      src="https://kit.fontawesome.com/a2e0b1c6bb.js"
-      crossorigin="anonymous"
-    ></script>
-    <style>
-    .hero {
-        background: url("images/bclbg.jpg") center/cover no-repeat;
-        color: white;
-        height: 400px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .hero h1 {
-        background: rgba(0, 0, 0, 0.6);
-        padding: 10px 20px;
-        border-radius: 5px;
-    }
-    .carousel-item img {
-        max-height: 400px;
-        object-fit: cover;
-    }
-    
-    </style>
-  </head>
-  <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">BCL</a>
-        <button
-  class="navbar-toggler"
-  type="button"
-  data-mdb-toggle="collapse"
-  data-mdb-target="#navbarNav"
-  aria-controls="navbarNav"
-  aria-expanded="false"
-  aria-label="Toggle navigation"
-  style="border: none; background: none; font-size: 1.8rem; color: white;"
->
-  ☰
-</button>
-
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item"><a class="nav-link active" href="index.html">Accueil</a></li>
-            <li class="nav-item"><a class="nav-link" href="club.html">Le Club</a></li>
-            <li class="nav-item"><a class="nav-link" href="horaires.html">Horaires</a></li>
-            <li class="nav-item"><a class="nav-link" href="evenements.html">Événements</a></li>
-            <li class="nav-item"><a class="nav-link" href="galerie.html">Galerie</a></li>
-            <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Hero -->
-    <section id="accueil" class="hero">
-      <h1>Badminton Club Lutterbach</h1>
-    </section>
-
-    <!-- Galerie / Carrousel -->
-    <section id="galerie" class="py-5">
-      <div class="container">
-        <h2 class="mb-4 text-center">Galerie photos</h2>
-        <div
-          id="carouselBCL"
-          class="carousel slide carousel-fade"
-          data-mdb-ride="carousel"
-        >
-          <div class="carousel-inner" id="carouselContent">
-            <!-- images générées par JS -->
-          </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-mdb-target="#carouselBCL"
-            data-mdb-slide="prev"
-          >
-            <span class="carousel-control-prev-icon"></span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-mdb-target="#carouselBCL"
-            data-mdb-slide="next"
-          >
-            <span class="carousel-control-next-icon"></span>
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="py-5 bg-light">
-        <div class="container">
-        <h2 class="mb-4 text-center">Contactez-nous</h2>
-        <form
-            action="https://formspree.io/f/mvgrlyld"
-            method="POST">
-            <div class="mb-3">
-                <label for="email" class="form-label">Votre email</label>
-                <input
-                type="email"
-                class="form-control"
-                name="email"
-                id="email"
-                required
-                />
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>BADMINTON CLUB DE LUTTERBACH</title>
+        <!-- MDBootstrap -->
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css"
+            rel="stylesheet" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">BCL</a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-mdb-toggle="collapse"
+                    data-mdb-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    ☰
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active"
+                                href="index.html">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link"
+                                href="club.html">Le Club</a></li>
+                        <li class="nav-item"><a class="nav-link"
+                                href="horaires.html">Horaires</a></li>
+                        <li class="nav-item"><a class="nav-link"
+                                href="evenements.html">Événements</a></li>
+                        <li class="nav-item"><a class="nav-link"
+                                href="galerie.html">Galerie</a></li>
+                        <li class="nav-item"><a class="nav-link"
+                                href="#contact">Contact</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="mb-3">
-                <label for="message" class="form-label">Votre message</label>
-                <textarea class="form-control" name="message" id="message" rows="4" required></textarea>
+        </nav>
+
+        <!-- Hero -->
+        <section id="accueil" class="hero">
+            <h1>Badminton Club Lutterbach</h1>
+        </section>
+
+        <!-- Galerie / Carrousel -->
+        <section id="galerie" class="py-5">
+            <div class="container">
+                <h2 class="mb-4 text-center">Galerie photos</h2>
+                <div
+                    id="carouselBCL"
+                    class="carousel slide carousel-fade"
+                    data-mdb-ride="carousel">
+                    <div class="carousel-inner" id="carouselContent">
+                        <!-- images générées par JS -->
+                    </div>
+                    <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-mdb-target="#carouselBCL"
+                        data-mdb-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-mdb-target="#carouselBCL"
+                        data-mdb-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
             </div>
-          <button type="submit" class="btn btn-primary w-100" >Envoyer</button>
-        </form>
+        </section>
 
-        <!-- Coordonnées -->
-<div class="mt-5 text-center">
-  <p>
-    📍
-    <a
-      href="https://www.google.com/maps?q=Espace+Sportif+de+Lutterbach+7+Rue+de+la+Forêt+68460+Lutterbach"
-      target="_blank"
-      rel="noopener"
-    >
-      Espace Sportif de Lutterbach, 7 Rue de la Forêt, 68460 Lutterbach
-    </a>
-  </p>
-  <p>📞 Numéro de téléphone à venir</p>
-  <p>📧 bclutterbach@gmail.com</p>
-</div>
-          <!-- Réseaux sociaux -->
-          <div class="mt-3">
-            <a href="#" class="btn btn-outline-dark btn-floating m-1" role="button"
-              ><i class="fab fa-facebook-f"></i
-            ></a>
-            <a href="#" class="btn btn-outline-dark btn-floating m-1" role="button"
-              ><i class="fab fa-instagram"></i
-            ></a>
-          </div>
-        </div>
-      </div>
-    </section>
-<!-- Footer -->
-    <footer class="bg-primary text-center text-white py-3">
-      <p class="mb-0">&copy; 2025 Badminton Club Lutterbach</p>
-      <small><a href="mentions.html" class="text-white">Mentions légales</a></small>
-    </footer>
-    <!-- MDBootstrap -->
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"
-    ></script>
+        <!-- Contact -->
+        <section id="contact" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="mb-4 text-center">Contactez-nous</h2>
+                <form
+                    action="https://formspree.io/f/mvgrlyld"
+                    method="POST">
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Votre
+                            email</label>
+                        <input
+                            type="email"
+                            class="form-control"
+                            name="email"
+                            id="email"
+                            required />
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Votre
+                            message</label>
+                        <textarea
+                            class="form-control"
+                            name="message"
+                            id="message"
+                            rows="4"
+                            required></textarea>
+                    </div>
+                    <button type="submit"
+                        class="btn btn-primary w-100">Envoyer</button>
+                </form>
 
-    <!-- JS intégré -->
-    <script>
-      const images = [
-        "images/carrousel/slide1.jpg",
-        "images/carrousel/slide2.jpg",
-        "images/carrousel/slide3.jpg",
-        "images/carrousel/slide4.jpg"
-      ];
+                <!-- Coordonnées -->
+                <div class="mt-4 text-center">
+                    <p>📍 16 Rue des Bleuets, 68460 Lutterbach</p>
+                    <p>📧 <a
+                            href="mailto:bclutterbach@gmail.com">bclutterbach@gmail.com</a></p>
+                </div>
 
-      const carouselContent = document.getElementById("carouselContent");
+                <!-- Réseaux sociaux -->
+                <div class="mt-3 text-center">
+                    <a
+                        href="https://www.facebook.com/p/Badminton-Club-Lutterbach-100063648423150/"
+                        class="btn btn-outline-dark m-1"
+                        target="_blank"
+                        rel="noopener"
+                        aria-label="Page Facebook du BCL">
+                        <i class="fab fa-facebook-f"></i> Facebook
+                    </a>
+                </div>
+            </div>
+        </section>
 
-      images.forEach(function(src, index) {
-        var div = document.createElement("div");
-        div.classList.add("carousel-item");
-        if (index === 0) div.classList.add("active");
-        div.innerHTML = '<img src="' + src + '" class="d-block w-100" alt="Slide ' + (index + 1) + '">';
-        carouselContent.appendChild(div);
-      });
-    </script>
-  </body>
+        <!-- Footer -->
+        <footer class="bg-primary text-center text-white py-3">
+            <p class="mb-0">&copy; 2025 BADMINTON CLUB DE LUTTERBACH</p>
+            <small><a href="mentions.html" class="text-white">Mentions
+                    légales</a></small>
+            <br />
+            <small>
+                16 Rue des Bleuets, 68460 Lutterbach |
+                <a href="mailto:bclutterbach@gmail.com"
+                    class="text-white">bclutterbach@gmail.com</a>
+            </small>
+            <br />
+            <small>
+                <a
+                    href="https://www.facebook.com/p/Badminton-Club-Lutterbach-100063648423150/"
+                    class="text-white"
+                    target="_blank"
+                    rel="noopener">
+                    Page Facebook du club
+                </a>
+            </small>
+        </footer>
+
+        <!-- Scripts -->
+        <script
+            type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"></script>
+        <script src="js/logic.js"></script>
+    </body>
 </html>

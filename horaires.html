@@ -3,17 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Horaires & Tarifs - Badminton Club Lutterbach</title>
-    <!-- MDBootstrap -->
+    <title>Horaires & Tarifs – BADMINTON CLUB DE LUTTERBACH</title>
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css"
       rel="stylesheet"
     />
-    <!-- Font Awesome -->
-    <script
-      src="https://kit.fontawesome.com/a2e0b1c6bb.js"
-      crossorigin="anonymous"
-    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <style>
+      .navbar-toggler {
+        font-size: 1.8rem;
+        color: white;
+        border: none;
+        background: none;
+      }
+    </style>
   </head>
   <body>
     <!-- Navbar -->
@@ -21,17 +27,16 @@
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">BCL</a>
         <button
-  class="navbar-toggler"
-  type="button"
-  data-mdb-toggle="collapse"
-  data-mdb-target="#navbarNav"
-  aria-controls="navbarNav"
-  aria-expanded="false"
-  aria-label="Toggle navigation"
-  style="border: none; background: none; font-size: 1.8rem; color: white;"
->
-  ☰
-</button>
+          class="navbar-toggler"
+          type="button"
+          data-mdb-toggle="collapse"
+          data-mdb-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          ☰
+        </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
@@ -47,72 +52,71 @@
 
     <!-- Contenu principal -->
     <main class="container py-5">
+      <h1 class="mb-4 text-center">Horaires & Tarifs</h1>
 
       <!-- Horaires -->
-      <section id="horaires" class="mb-5">
-        <h2>Horaires d'entraînement</h2>
-        <p>À compléter : tableau des créneaux par catégorie (loisir, jeunes, compétiteurs).</p>
-        <!-- Exemple de tableau responsive -->
+      <section class="mb-5">
+        <h2>Créneaux d'entraînement</h2>
+
+        <h4 class="mt-4">Loisirs</h4>
+        <ul>
+          <li>Jeudi soir : 20h – 22h30</li>
+          <li>Samedi : 10h – 12h</li>
+          <li>Dimanche : 10h – 12h</li>
+        </ul>
+
+        <h4 class="mt-4">Compétiteurs</h4>
+        <ul>
+          <li>Mercredi soir : 20h30 – 22h30</li>
+          <li>Jeudi soir : 20h – 22h30</li>
+          <li>Samedi : 10h – 12h</li>
+          <li>Dimanche : 10h – 12h</li>
+        </ul>
+      </section>
+
+      <!-- Tarifs -->
+      <section>
+        <h2>Tarifs des licences</h2>
         <div class="table-responsive">
-          <table class="table table-striped">
-            <thead class="table-primary">
+          <table class="table table-bordered">
+            <thead class="table-light">
               <tr>
-                <th>Jour</th>
-                <th>Heure</th>
-                <th>Public</th>
+                <th>Catégorie</th>
+                <th>Tarif</th>
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>Mercredi</td>
-                <td>20h30 - 22h30</td>
-                <td>Adultes loisir</td>
-              </tr>
-              <tr>
-                <td>Jeudi</td>
-                <td>20h - 22h</td>
-                <td>Adultes loisir</td>
-              </tr>
-              <tr>
-                <td>Samedi</td>
-                <td>10h - 12h</td>
-                <td>Adultes loisir</td>
-              </tr>
-              <tr>
-                <td>Dimanche</td>
-                <td>10h - 12h</td>
-                <td>Adultes loisir</td>
-              </tr>
-              <!-- à compléter -->
+              <tr><td>Jeunes de 5 à 9 ans</td><td>60,00 €</td></tr>
+              <tr><td>Jeunes de 10 à 12 ans</td><td>70,00 €</td></tr>
+              <tr><td>Jeunes de 13 à 17 ans</td><td>80,00 €</td></tr>
+              <tr><td>Adultes Loisirs</td><td>90,00 €</td></tr>
+              <tr><td>Adultes Compétiteurs</td><td>100,00 €</td></tr>
             </tbody>
           </table>
         </div>
       </section>
-
-      <!-- Tarifs -->
-      <section id="tarifs" class="mb-5">
-        <h2>Tarifs des licences</h2>
-        <p>À compléter : tarifs annuels par type de licence.</p>
-        <!-- Exemple -->
-        <ul>
-          <li>Jeunes : à définir €</li>
-          <li>Adultes loisir : à définir €</li>
-          <li>Compétition : à définir €</li>
-        </ul>
-      </section>
-
-      <!-- Moyens de paiement -->
-      <section id="paiement" class="mb-5">
-        <h2>Moyens de paiement</h2>
-        <p>À compléter : chèque, virement, espèces, etc.</p>
-      </section>
-
     </main>
 
     <!-- Footer -->
     <footer class="bg-primary text-center text-white py-3">
-      <p class="mb-0">&copy; 2025 Badminton Club Lutterbach</p>
-      <small><a href="pages/mentions.html" class="text-white">Mentions légales</a></small>
+      <p class="mb-0">&copy; 2025 BADMINTON CLUB DE LUTTERBACH</p>
+      <small><a href="mentions.html" class="text-white">Mentions légales</a></small>
+      <br />
+      <small>
+        16 Rue des Bleuets, 68460 Lutterbach |
+        <a href="mailto:bclutterbach@gmail.com" class="text-white">bclutterbach@gmail.com</a>
+      </small>
+      <br />
+      <small>
+        <a
+          href="https://www.facebook.com/p/Badminton-Club-Lutterbach-100063648423150/"
+          class="text-white"
+          target="_blank"
+          rel="noopener"
+        >
+          Page Facebook du club
+        </a>
+      </small>
     </footer>
 
     <!-- MDBootstrap -->

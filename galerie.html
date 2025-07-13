@@ -1,116 +1,177 @@
 <!DOCTYPE html>
-<html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Galerie - Badminton Club Lutterbach</title>
-    <!-- MDBootstrap -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css"
-      rel="stylesheet"
-    />
-    <!-- Font Awesome -->
-    <script
-      src="https://kit.fontawesome.com/a2e0b1c6bb.js"
-      crossorigin="anonymous"
-    ></script>
-    <script>
-  console.log('✅ JS MDB chargé');
-</script>
+<html lang="="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Galerie – BADMINTON CLUB DE LUTTERBACH</title>
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css"
+            rel="stylesheet" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+        <link rel="stylesheet" href="css/lightbox.css" />
+        <style>
+      .navbar-toggler {
+        font-size: 1.8rem;
+        color: white;
+        border: none;
+        background: none;
+      }
 
-  </head>
-  <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">BCL</a>
-        <button
-  class="navbar-toggler"
-  type="button"
-  data-mdb-toggle="collapse"
-  data-mdb-target="#navbarNav"
-  aria-controls="navbarNav"
-  aria-expanded="false"
-  aria-label="Toggle navigation"
-  style="border: none; background: none; font-size: 1.8rem; color: white;"
->
-  ☰
-</button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
-            <li class="nav-item"><a class="nav-link" href="club.html">Le Club</a></li>
-            <li class="nav-item"><a class="nav-link" href="horaires.html">Horaires</a></li>
-            <li class="nav-item"><a class="nav-link" href="evenements.html">Événements</a></li>
-            <li class="nav-item"><a class="nav-link active" href="galerie.html">Galerie</a></li>
-            <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+      .card img {
+        height: 200px;
+        object-fit: cover;
+      }
 
-    <!-- Contenu principal -->
-    <main class="container py-5">
-
-      <!-- Galerie photos -->
-      <section id="photos" class="mb-5">
-        <h2>Galerie photos</h2>
-        <p>À compléter : intégrer des photos d’entraînements, événements, etc.</p>
-        <div class="row">
-          <!-- Exemple de carte photo -->
-          <div class="col-md-4 mb-4">
-            <div class="card">
-              <img src="images/galerie/exemple1.jpg" class="card-img-top" alt="Exemple"/>
-              <div class="card-body">
-                <p class="card-text">Titre de la photo</p>
-              </div>
+      iframe {
+        width: 100%;
+        max-width: 720px;
+        height: 405px;
+      }
+    </style>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">BCL</a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-mdb-toggle="collapse"
+                    data-mdb-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    ☰
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link"
+                                href="index.html">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link"
+                                href="club.html">Le Club</a></li>
+                        <li class="nav-item"><a class="nav-link"
+                                href="horaires.html">Horaires</a></li>
+                        <li class="nav-item"><a class="nav-link"
+                                href="evenements.html">Événements</a></li>
+                        <li class="nav-item"><a class="nav-link active"
+                                href="galerie.html">Galerie</a></li>
+                        <li class="nav-item"><a class="nav-link"
+                                href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
             </div>
-          </div>
-          <div class="col-md-4 mb-4">
-            <div class="card">
-              <img src="images/galerie/exemple2.jpg" class="card-img-top" alt="Exemple"/>
-              <div class="card-body">
-                <p class="card-text">Titre de la photo</p>
-              </div>
-            </div>
-          </div><div class="col-md-4 mb-4">
-            <div class="card">
-              <img src="images/galerie/exemple3.jpg" class="card-img-top" alt="Exemple"/>
-              <div class="card-body">
-                <p class="card-text">Titre de la photo</p>
-              </div>
-            </div>
-          </div>
-          <!-- ajouter d'autres cartes -->
-        </div>
-      </section>
+        </nav>
 
-      <!-- Galerie vidéos -->
-      <section id="videos" class="mb-5">
-        <h2>Galerie vidéos</h2>
-        <p>À compléter : intégrer des vidéos YouTube, Vimeo, etc.</p>
-        <!-- Exemple d'intégration vidéo -->
-        <div class="ratio ratio-16x9">
-          <iframe
-            src="https://www.youtube.com/embed/xxxxxxxx"
-            title="Vidéo exemple"
-            allowfullscreen
-          ></iframe>
-        </div>
-      </section>
+        <!-- Contenu principal -->
+        <main class="container py-5">
+            <h1 class="mb-4 text-center">Galerie</h1>
 
-    </main>
+            <!-- Galerie photos -->
+            <section class="mb-5">
+                <h2>Galerie photos</h2>
+                <p>Photos d'entraînements, de tournois et de la vie du club (clique pour agrandir)
+                    :</p>
 
-    <!-- Footer -->
-    <footer class="bg-primary text-center text-white py-3">
-      <p class="mb-0">&copy; 2025 Badminton Club Lutterbach</p>
-      <small><a href="mentions.html" class="text-white">Mentions légales</a></small>
-    </footer>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a href="images/galerie/exemple1.jpg"
+                                class="lightbox-trigger">
+                                <img src="images/galerie/exemple1.jpg"
+                                    class="card-img-top"
+                                    alt="Tournoi enfants" />
+                            </a>
+                            <div class="card-body text-center">
+                                <p class="card-text">Podium tournoi</p>
+                            </div>
+                        </div>
+                    </div>
 
-    <!-- MDBootstrap -->
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"
-    ></script>
-  </body>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a href="images/galerie/exemple2.jpg"
+                                class="lightbox-trigger">
+                                <img src="images/galerie/exemple2.jpg"
+                                    class="card-img-top"
+                                    alt="Entraînement adulte" />
+                            </a>
+                            <div class="card-body text-center">
+                                <p class="card-text">Entraînement adultes</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a href="images/galerie/exemple3.jpg"
+                                class="lightbox-trigger">
+                                <img src="images/galerie/exemple3.jpg"
+                                    class="card-img-top" alt="Remise de prix" />
+                            </a>
+                            <div class="card-body text-center">
+                                <p class="card-text">Entraînement adultes</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a href="images/galerie/slide1.jpg"
+                                class="lightbox-trigger">
+                                <img src="images/galerie/slide1.jpg"
+                                    class="card-img-top" alt="Remise de prix" />
+                            </a>
+                            <div class="card-body text-center">
+                                <p class="card-text">Bernard</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Galerie vidéos -->
+            <section>
+                <h2>Galerie vidéos</h2>
+                <p>Retrouvez ici nos vidéos YouTube&nbsp;:</p>
+                <div class="d-flex justify-content-center">
+                    <iframe
+                        src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                        title="Vidéo du club"
+                        allowfullscreen></iframe>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-primary text-center text-white py-3">
+            <p class="mb-0">&copy; 2025 BADMINTON CLUB DE LUTTERBACH</p>
+            <small><a href="mentions.html" class="text-white">Mentions
+                    légales</a></small>
+            <br />
+            <small>
+                16 Rue des Bleuets, 68460 Lutterbach |
+                <a href="mailto:bclutterbach@gmail.com"
+                    class="text-white">bclutterbach@gmail.com</a>
+            </small>
+            <br />
+            <small>
+                <a
+                    href="https://www.facebook.com/p/Badminton-Club-Lutterbach-100063648423150/"
+                    class="text-white"
+                    target="_blank"
+                    rel="noopener">
+                    Page Facebook du club
+                </a>
+            </small>
+        </footer>
+
+        <!-- Scripts -->
+        <script
+            type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"></script>
+        <script src="js/lightbox.js"></script>
+    </body>
 </html>
